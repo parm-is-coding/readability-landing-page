@@ -4,12 +4,17 @@ body {
 }
 
 /* container classes */
-#navBar {
+#hero {
   background-color: #2d2d2d;
+}
+#navBar {
   display: flex;
 }
 
-#navBar {
+#navBar,
+#hero,
+#quote,
+#callToAction {
   padding-left: 15%;
   padding-right: 15%;
 }
