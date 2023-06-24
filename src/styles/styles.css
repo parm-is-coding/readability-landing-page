@@ -3,6 +3,13 @@ body {
   border: 0;
 }
 
+/* container classes */
 #navBar {
   background-color: #2d2d2d;
+  display: flex;
+}
+
+#navBar {
+  padding-left: 15%;
+  padding-right: 15%;
 }
