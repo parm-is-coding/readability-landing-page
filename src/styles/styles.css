@@ -26,12 +26,29 @@ button {
 #navBar {
   display: flex;
 }
-
-#hero,
-#quote,
-#callToAction {
-  padding-left: 15%;
-  padding-right: 15%;
+@media (min-width: 700px) and (max-width: 800px) {
+  #hero,
+  #quote,
+  #callToAction {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (min-width: 800px) and (max-width: 1250px) {
+  #hero,
+  #quote,
+  #callToAction {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+@media (min-width: 1250px) {
+  #hero,
+  #quote,
+  #callToAction {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
 }
 
 /* navBar css */
@@ -45,12 +62,19 @@ button {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-right: auto;
 }
 #dot {
   background-color: #f45c5c;
   height: 55px;
   width: 55px;
   border-radius: 50%;
+}
+.links {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  color: #2d2d2d;
 }
 /* hero css */
 #hero {
