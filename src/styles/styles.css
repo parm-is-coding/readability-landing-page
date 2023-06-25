@@ -31,3 +31,14 @@ button {
   padding-left: 15%;
   padding-right: 15%;
 }
+
+/* navBar css */
+.logo {
+  color: #f45c5c;
+}
+#dot {
+  background-color: #f45c5c;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
