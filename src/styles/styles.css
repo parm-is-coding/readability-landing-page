@@ -1,0 +1,105 @@
+* {
+  font-family: Roboto;
+}
+/* html tag styles */
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+button {
+  border-radius: 20px;
+  background-color: #cc3f3f;
+  color: azure;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0;
+  font-size: 15px;
+}
+
+/* container classes */
+#hero,
+#navBar {
+  background-color: #d9d9d9;
+}
+#navBar {
+  display: flex;
+}
+
+@media (min-width: 820px) and (max-width: 1250px) {
+  #hero,
+  #quote,
+  #callToAction,
+  #features {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media (min-width: 1250px) {
+  #hero,
+  #quote,
+  #callToAction,
+  #features {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
+
+/* navBar css */
+#navBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logo {
+  color: #f45c5c;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: auto;
+}
+#dot {
+  background-color: #f45c5c;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+}
+.links {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  color: #2d2d2d;
+}
+/* hero css */
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#subHero {
+  width: 500px;
+}
+#heroContent {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 820px) {
+  #heroVideo {
+    flex: none;
+    width: 360px;
+    height: 240px;
+    background-color: #cc3f3f;
+    border-radius: 20px;
+    text-align: center;
+  }
+}
+#heroHeader {
+  color: #2d2d2d;
+}
+/* features css */
+.headers {
+  text-align: center;
+  font-size: 25px;
+  color: #2d2d2d;
+}
