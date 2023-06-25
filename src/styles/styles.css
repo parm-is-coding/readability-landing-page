@@ -26,18 +26,12 @@ button {
 #navBar {
   display: flex;
 }
-/* @media (min-width: 900px) and (max-width: 800px) {
-  #hero,
-  #quote,
-  #callToAction {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-} */
+
 @media (min-width: 820px) and (max-width: 1250px) {
   #hero,
   #quote,
-  #callToAction {
+  #callToAction,
+  #features {
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -45,7 +39,8 @@ button {
 @media (min-width: 1250px) {
   #hero,
   #quote,
-  #callToAction {
+  #callToAction,
+  #features {
     padding-left: 25%;
     padding-right: 25%;
   }
@@ -98,4 +93,13 @@ button {
     border-radius: 20px;
     text-align: center;
   }
+}
+#heroHeader {
+  color: #2d2d2d;
+}
+/* features css */
+.headers {
+  text-align: center;
+  font-size: 25px;
+  color: #2d2d2d;
 }
