@@ -5,7 +5,9 @@
 body {
   margin: 0;
   border: 0;
+  padding: 0;
 }
+
 button {
   border-radius: 20px;
   background-color: #cc3f3f;
@@ -17,14 +19,14 @@ button {
 }
 
 /* container classes */
-#hero {
+#hero,
+#navBar {
   background-color: #d9d9d9;
 }
 #navBar {
   display: flex;
 }
 
-#navBar,
 #hero,
 #quote,
 #callToAction {
@@ -33,12 +35,26 @@ button {
 }
 
 /* navBar css */
+#navBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 .logo {
   color: #f45c5c;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 #dot {
   background-color: #f45c5c;
-  height: 75px;
-  width: 75px;
+  height: 55px;
+  width: 55px;
   border-radius: 50%;
+}
+/* hero css */
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
