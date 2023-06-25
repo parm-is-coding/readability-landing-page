@@ -26,20 +26,20 @@ button {
 #navBar {
   display: flex;
 }
-@media (min-width: 700px) and (max-width: 800px) {
+/* @media (min-width: 900px) and (max-width: 800px) {
   #hero,
   #quote,
   #callToAction {
     padding-left: 5%;
     padding-right: 5%;
   }
-}
-@media (min-width: 800px) and (max-width: 1250px) {
+} */
+@media (min-width: 820px) and (max-width: 1250px) {
   #hero,
   #quote,
   #callToAction {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 @media (min-width: 1250px) {
@@ -81,4 +81,21 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+#subHero {
+  width: 500px;
+}
+#heroContent {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 820px) {
+  #heroVideo {
+    flex: none;
+    width: 360px;
+    height: 240px;
+    background-color: #cc3f3f;
+    border-radius: 20px;
+    text-align: center;
+  }
 }
