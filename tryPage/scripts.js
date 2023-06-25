@@ -6,7 +6,7 @@ import { backOff } from 'exponential-backoff';
 
 const configuration = new Configuration({
     organization: 'org-mtnx3paq9vdUscGbK1znT4p4',
-    apiKey: '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',
+    apiKey: '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',
 });
 
 const openai = new OpenAIApi(configuration);
