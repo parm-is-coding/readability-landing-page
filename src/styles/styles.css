@@ -31,7 +31,8 @@ button {
   #hero,
   #quote,
   #callToAction,
-  #features {
+  #features,
+  #footer {
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -40,7 +41,8 @@ button {
   #hero,
   #quote,
   #callToAction,
-  #features {
+  #features,
+  #footer {
     padding-left: 25%;
     padding-right: 25%;
   }
@@ -102,4 +104,19 @@ button {
   text-align: center;
   font-size: 25px;
   color: #2d2d2d;
+}
+/* quotes css */
+#quote {
+  background-color: #b88484;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#quoteText {
+  width: 500px;
+  color: azure;
+  font-style: italic;
+  font-weight: 300;
 }
