@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: Roboto-Medium;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
     font-family: Roboto-MediumItalic;
     src: url(../fonts/Roboto-MediumItalic.ttf);
 }
@@ -42,7 +47,7 @@ a {
     color: #cc3f3f;
     font-family: Roboto-Regular;
     font-size: 48px;
-    margin-left: 150px;
+    margin-left: 110px;
 }
 #logo {
     display: flex;
@@ -58,7 +63,7 @@ a {
     align-items: center;
     font-family: Roboto-Regular;
     font-size: 40px;
-    margin-right: 150px;
+    margin-right: 95px;
     height: 100px;
 }
 #middleSection {
@@ -91,15 +96,14 @@ textarea {
     background: transparent;
     scrollbar-color: transparent;
     font-family: Roboto-Regular;
-    overflow-y: scroll;
+    overflow-y: auto;
     border: #d9d9d9;
-    font-size: 26px;
+    font-size: 24px;
     width: 530px;
     height: 570px;
     padding: 10px;
     resize: none;
     border-style: none;
-    overflow: hidden;
 }
 
 textarea:focus {
@@ -121,21 +125,21 @@ textarea:focus {
     border-style: none;
     background: transparent;
     font-family: Roboto-Regular;
-    overflow-y: scroll;
+    overflow-y: auto;
     border: #d9d9d9;
     color: #2d2d2d;
-    font-size: 26px;
+    font-size: 24px;
     width: 525px;
     height: 560px;
     padding: 10px;
     resize: none;
-    overflow: hidden;
 }
 #footer {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    margin-bottom: 50px;
     width: auto;
 }
 button {
@@ -150,12 +154,8 @@ button {
     height: 70px;
 }
 
-#chat-log {
-    margin-left: 15px;
-    margin-right: 15px;
-    margin: 10px;
-}
-
-.message__text {
-    font-family: Roboto-MediumItalic;
+.response {
+    text-align: end;
+    font-size: 24px;
+    font-family: Roboto-Medium;
 }
