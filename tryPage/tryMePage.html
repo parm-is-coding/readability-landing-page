@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>document</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div id="navBar">
+            <div id="leftNav">
+                <div id="circleIcon"></div>
+                <div id="logo">ReadAbility</div>
+            </div>
+            <div id="rightNav">
+                <a href="../index.html">Home</a>
+                <a href="">Download</a>
+            </div>
+        </div>
+        <div id="middleSection">
+            <div class="inputAndOutputBoxes" id="inputBox">
+                <form action="">
+                    <textarea type="text" name="message" id="message">
+Explain to me what coffee is.</textarea
+                    >
+                </form>
+            </div>
+            <div class="inputAndOutputBoxes" id="outputBox">
+                <div class="display" id="display">
+                    <div id="chat-log"></div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="button">
+                <button id="simplify" type="submit">Simplify!</button>
+            </div>
+        </div>
+        <script>
+            const chatlog = document.getElementById('chat-log');
+            const message = document.getElementById('message');
+            const form = document.querySelector('form');
+            const simplify = document.getElementById('simplify');
+            simplify.addEventListener('click', (e) => {
+                e.preventDefault();
+                const messageText = message.value;
+                message.value = '';
+                const messageElement = document.createElement('div');
+                messageElement.classList.add('message');
+                messageElement.classList.add('message--sent');
+                messageElement.innerHTML = `<div class = "message__text">${messageText}</div>`;
+                chatlog.appendChild(messageElement);
+                chatlog.scrollTop = chatlog.scrollHeight;
+                fetch('http://localhost:3000', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: messageText,
+                    }),
+                })
+                    .then((res) => res.json())
+                    .then((data) => {
+                        const messageElement = document.createElement('div');
+                        messageElement.classList.add('message');
+                        messageElement.classList.add('message--received');
+                        messageElement.classList.add('response');
+                        messageElement.innerHTML = `<div class="message__text" class = "response">${data.completion.content}<p></p></div>`;
+                        chatlog.appendChild(messageElement);
+                        chatlog.scrollIntoView();
+                        messageElement.scrollIntoView();
+                    });
+            });
+        </script>
+    </body>
+</html>
